@@ -6,9 +6,9 @@ body , html {
 }
 
 .home-header{
-    /* background: rgba(46, 46, 46, 0.8); */
-    background: #d6d6d6;
-    color: #2d2f34;
+    background: rgba(46, 46, 46, 0.8);
+    /* background: #d6d6d6; */
+    color: white;
     padding: 20px 0;
     width: 100%;
     position: fixed;
@@ -22,7 +22,7 @@ body , html {
    height: 86%;
    margin: 0 auto;
    z-index: 0;
-   background: #d6d6d6;
+   /* background: rgba(46, 46, 46, 0.8); */
 }
 
 .home-container-logoname{
@@ -56,8 +56,8 @@ body , html {
 
 .home-main-nav-a{
     text-decoration: none;
-    /* color: white; */
-    color: #2d2f34;
+    color: white;
+    /* color: #2d2f34; */
 }
 
 
@@ -67,39 +67,50 @@ body , html {
     /* background-color: #fff; */
     vertical-align: top;
     z-index: 1;
+    height: 100vh;
+    padding-top: 3rem;
+    align-items: center;
+    display: flex;
 }
 
-.home-banner,
+/* .home-banner, */
 .about-banner ,
 .projects-banner ,
 .blogs-banner ,
 .contactme-banner {
-    height: 100vh;
+    padding-top: 3rem;
+    height: auto;
     align-items: center;
     display: flex;
     /* background: linear-gradient(to bottom, #fff 0%,  #fff 100%); */
 }
 
+.contactme-banner{
+     height: 100vh;
+}
 .container-banner-home{
   width: 86%;
-  height: 86%;
+  height: auto;
   margin: 0 auto;
   z-index: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .container-banner{
   width: 86%;
-  height: 86%;
+  height: auto;
   margin: 0 auto;
   z-index: 0;
-  background: #d6d6d6;
+  background: white;
+  border-radius: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  opacity: 0.8;
+  opacity: 1;
+  position: relative;
 }
 
 
@@ -108,6 +119,7 @@ body , html {
   /* display: flex; */
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
 .Content-heading{
@@ -122,9 +134,10 @@ body , html {
     height: 100px;
     margin: 0 auto;
     position: absolute;
-    bottom: 0px;
+    bottom: -2rem;
     left: 0;
     right: 0;
+
   }
   
   .arrow-1{
@@ -256,11 +269,15 @@ body , html {
     overflow: hidden;
     opacity: .8;
     z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .innerFooter__mainBox{
-    background-image: url(../../img/img/footer.jpg);
-    top:27.5%;
+    /* background-image: url(../../img/img/footer.jpg); */
+    /* top:27.5%; */
     position: relative;
     /* margin-right: 21.42%; */
     color: #fff;
@@ -270,7 +287,7 @@ body , html {
     background-size: cover;
     z-index: 1;
     width: 100%;
-    height: 45%;
+    height: auto;
   }
 
   .innerFooter__men{
@@ -289,30 +306,11 @@ body , html {
   }
 
   .innerFooter__mainBox_body{
-    padding-left: 10%;
     padding-top: 0%;
-  }
-
-  .innerFooter__mainBox_Instagram{
-    padding-top: 3%;
-    /* background-image: url(../../img/icons/insta.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    width: 2%;
-    height: 2%;
-    z-index: 2;
-  }
-
-  .innerFooter__mainBox_facebook{
-    padding-top: 2%;
-    /* background-image: url(../../img/icons/insta.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    width: 3%;
-    height: 3%;
-    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .blog-medium-img{
@@ -397,6 +395,7 @@ body , html {
 
 .container {
   width: 100%;
+  height: auto;
   background-color: #ddd;
 }
 
@@ -421,7 +420,32 @@ body , html {
   color: rgb(204, 109, 109);
 }
 
+/*---------------------------------------------*/
+.about-flex{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
 
+.about-skill-flex{
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.about-skill{
+  padding-bottom: 5rem;
+}
+
+/*-------------*/
+
+.section-container{
+  position: relative;
+}
+
+.footer-icon{
+  font-size: 1.5rem;
+}
 
 
 

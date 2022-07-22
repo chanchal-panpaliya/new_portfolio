@@ -1,98 +1,57 @@
 .Project_Mark1 ,.Project_Mark2 ,.Project_Mark3  ,.Project_Mark4 ,.Project_Mark5, .Project_Mark6 ,.Project_Mark7 ,.Project_Mark8 ,.Project_Mark9 ,.Project_Mark10 ,.Project_Mark11 ,.Project_Mark12{
-    width:12vw;
+    /* width:12vw; */
     height:35vh;
     transition:top 0.4s , background-position 12s cubic-bezier(.4,.74,1,1);
     background-size: cover;
     background-repeat:no-repeat;
     text-align: center;
     z-index: 0;
+    width: auto;
 }
 
 
 .Project_Mark1{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/mark1.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/mark1.png);
 }
 
 .Project_Mark2{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/mark2.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/mark2.png);
 }
 
 .Project_Mark3{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/bananatalk.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/bananatalk.png);
 }
 
 .Project_Mark4{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/swedishtalk.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/swedishtalk.png);
 }
 
 .Project_Mark5{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/emoji.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/emoji.png);
 }
 
 .Project_Mark6{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/movie.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/movie.png);
 }
 .Project_Mark7{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/cashregistermanager.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/cashregistermanager.png);
 }
 .Project_Mark8{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/birthdayluckynumber2.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/birthdayluckynumber2.png);
 }
 .Project_Mark9{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/funwithtriangles.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/funwithtriangles.png);
 }
 .Project_Mark10{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/birthdaypalindrome.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/birthdaypalindrome.png);
 }
 .Project_Mark11{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/stockprofitloss.png);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/projects/stockprofitloss.png);
 }
 .Project_Mark12{
-    background:linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/medium.jpeg);
+    background:linear-gradient( rgba(124, 115, 115, 0.5) 100%, rgba(0, 0, 0, 0.5)100%),url(../../img/img/medium.jpeg);
 }
 
-
-/* .Project_Mark1{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-
-.Project_Mark2{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-
-.Project_Mark3{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-
-.Project_Mark4{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-
-.Project_Mark5{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-
-.Project_Mark6{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-.Project_Mark7{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-.Project_Mark8{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-.Project_Mark9{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-.Project_Mark10{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-.Project_Mark11{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-}
-.Project_Mark12{
-    background:linear-gradient( rgba(255, 255, 255, 0.5) 100%, rgba(0, 0, 0, 0.5)100%);
-} */
 
 .Project_Mark1:hover ,
 .Project_Mark2:hover ,
@@ -186,6 +145,61 @@
 .img_projects:hover{
     width: 30%;
 }
+
+/*---------------------------------------------*/
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.flex-row{
+    /* display: flex;
+    column-gap: 1rem; */
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    background: transparent;
+    padding-top: 2rem;
+    padding-bottom:2rem ;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .flex-row{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .flex-row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 766px) {
+    .flex-row{
+        grid-template-columns: 1fr 1fr ;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .flex-row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .flex-row{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
 
 
 

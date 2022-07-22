@@ -1,0 +1,63 @@
+.macro-project-container{
+    display: grid;
+    grid-template-columns:repeat(2,auto);
+    gap: 10px;
+    margin-top: 15px; 
+    /* justify-content: center; */
+    width: auto;
+    padding: 1rem;
+}
+
+
+.button-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
+    margin-top: 1rem;
+} 
+
+.button-flex button{
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: blueviolet;
+  border-radius: 5px;
+  width: 5rem;
+}
+
+.button-flex button:first-child{
+   color: red;
+}
+
+.macro-project-box{
+    display: flex;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  }
+  
+  .macro-project-content{
+    flex-direction: column;
+    margin-right: 10px;
+    flex: 1;
+  }
+  
+  .macro-project-content{
+     padding: 1rem;
+  }
+  
+  
+  .macro-project-image{
+    flex: 1;
+  }
+  
+ .img-macro{
+    display: block;
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+  }
+
+@media (max-width:1200px) {
+    .macro-project-container{  grid-template-columns:repeat(1,auto); }
+}

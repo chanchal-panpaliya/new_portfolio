@@ -1,0 +1,14 @@
+.padding-blog{
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+}
+
+.margin-blog{
+    margin-left: 1rem;
+}
+
+@media (max-width:900px) {
+    .padding-blog{
+        margin: 2rem;
+    }
+}

@@ -12,11 +12,13 @@ import linkedIn from '../../img/icons/linkedin.png';
 import github from '../../img/icons/github.png';
 //img
 import medium from '../../img/img/medium.jpeg';
-//video
-import BackgroundVideo from '../../img/video/about.mp4';
 //other component
 import Projects from '../Projects/Projects.js';
-
+import NeogProjects from "../Projects/NeogProjects";
+//
+import About from '../About/About'
+import ProjectList from "../Projects/ProjectList";
+import Blogs from "../Blogs/Blogs";
 
 class Home extends Component{
 
@@ -33,7 +35,7 @@ renderArrowHome=()=>{
 
 renderArrowAbout=()=>{
         return(
-                <div className="arrow-container animated fadeInDown" style={{bottom: '-100%'}}>
+                <div className="arrow-container animated fadeInDown">
                    <a href="#projects" className="home-main-nav-a"> 
                      <div className="arrow-2" style={{background:'#c5dc00'}}> <img className="arrowDownIcon" src={ArrowDown} alt="ArrowDown"/> </div>
                    </a>  
@@ -44,7 +46,7 @@ renderArrowAbout=()=>{
 
 renderArrowProject=()=>{
         return(
-                <div className="arrow-container animated fadeInDown" style={{bottom: '-200%'}}>
+                <div className="arrow-container animated fadeInDown">
                    <a href="#blogs" className="home-main-nav-a"> 
                      <div className="arrow-2" style={{background:'#c5325a'}}> <img className="arrowDownIcon" src={ArrowDown} alt="ArrowDown"/> </div>
                    </a>
@@ -55,7 +57,7 @@ renderArrowProject=()=>{
 
 renderArrowBlog=()=>{
         return(
-                <div className="arrow-container animated fadeInDown" style={{bottom: '-300%'}}>
+                <div className="arrow-container animated fadeInDown">
                    <a href="#contactme" className="home-main-nav-a"> 
                      <div className="arrow-2" style={{background:'#f2004a'}}> <img className="arrowDownIcon" src={ArrowDown} alt="ArrowDown"/> </div>
                     </a>
@@ -66,7 +68,7 @@ renderArrowBlog=()=>{
 
 renderArrowContactme=()=>{
         return(
-                <div className="arrow-container animated fadeInDown" style={{bottom: '-356%',left:'30%',zIndex:'2'}}>
+                <div className="arrow-container animated fadeInDown">
                    <a href="#home" className="home-main-nav-a"> 
                      <div className="arrow-2" style={{background:'#00c0cc'}}> <img className="arrowDownIconDown" src={ArrowUp} alt="ArrowUp"/> </div>
                      <div className="arrow-1 animated hinge infinite zoomIn" style={{background:'#00c0cc'}}></div>
@@ -92,9 +94,9 @@ renderHome = () =>{
                                         <div>A Frontend Web Developer</div>
                                 </div>
                         </div>
+                        
                    </div>
-                 
-                           {this.renderArrowHome()}
+                   {/* {this.renderArrowHome()}     */}
                 </section>
         )
 }
@@ -104,14 +106,12 @@ renderAbout = () =>{
         <section className="about-banner" id="about">
          <div className="container-banner">
            <div className="container-banner-body"> 
-               <h1 className="Content-heading">About Me</h1>
-                  <p style={{paddingLeft:'3%',opacity:'1'}}>
-                      <table>
-                              <tbody>
-                                      <tr>
-                                              <td style={{width:'55%',paddingRight:'1%'}}>
-                                                   <p>
-                                                  &nbsp;&nbsp; I  have completed Master’s degree (MCA) from the University of Pune(2018).
+                       
+                        <div className="about-flex">
+                                <h1 className="Content-heading">About Me</h1>
+                                <section>
+                                   <div>
+                                   &nbsp;&nbsp; I  have completed Master’s degree (MCA) from the University of Pune(2018).
                                                   <br/><br/><br/>
                                                    <h5> Profile Summary : </h5>
                                                     <ul>
@@ -126,72 +126,47 @@ renderAbout = () =>{
                                                             <li> Represented as a cultural coordinator in IICMR College. </li>
                                                            
                                                     </ul>
-                                                   </p>
-                                              </td>
-                                              <td style={{position:'relative',right:'-5%'}}>
-                                                      <table style={{width:'80%'}}>
-                                                              <tbody>
-                                                                      <tr>
-                                                                              <td>  
-                                                                                      <h3> Skills </h3>
-                                                                                
-                                                                                      <p>HTML</p>
-                                                                                        <div className="container">
-                                                                                             <div className="skills html">90%</div>
-                                                                                        </div>
-
-                                                                                        <p>CSS</p>
-                                                                                        <div className="container">
-                                                                                            <div className="skills css">60%</div>
-                                                                                        </div>
-
-                                                                                        <p>JavaScript</p>
-                                                                                        <div className="container">
-                                                                                            <div className="skills js">50%</div>
-                                                                                        </div>
-
-                                                                                        <p>Reactjs</p>
-                                                                                        <div className="container">
-                                                                                             <div className="skills php">50%</div>
-                                                                                        </div>
-                                                                              </td>
-                                                                        </tr>
-                                                                        <tr>
-                                                                              <td>  
-                                                                                      <h3> Certification </h3>
+                                   </div>
+                                                 
+                                     
+                                      <div>
+                                      <h3> Skills </h3>                                       
+                                         <p>HTML ,CSS,JavaScript,Reactjs,Redux,TypeScript </p>                        
+                                      </div>   
+                                      <div className="about-skill">
+                                      <h3> Certification </h3>
                                                                                       <p> Salesforce Platform Developer I (SP17). <a href="https://drive.google.com/file/d/1ZtZTXUxWi7LS1CUYcvxBrnftqUxTljMB/view?usp=sharing" target="_blank" className="Textlink"> link </a> </p>
                                                                                       <p> Microsoft SQL Server 2012 Fundamental.  <a href="https://drive.google.com/file/d/1ih2qu8P62Udi3zeufKpr5MtT5Cs6rExu/view?usp=sharing" target="_blank" className="Textlink"> link </a></p>
-                                                                              </td>
-                                                                      </tr>
-                                                              </tbody>
-                                                      </table>
-                                              </td>
-                                      </tr>
-                              </tbody>
-                      </table>
-                  </p>
-     
+                                                                   
+                                      </div>       
+                                </section>
+                          
+                        </div>
            </div>
+           {this.renderArrowAbout()}
         </div>
-                     {this.renderArrowAbout()}
+                    
    </section>
       )
 }
 
 renderProjects = () =>{
-        return(
-                
+        return(     
         <section className="projects-banner" id="projects">
          <div className="container-banner">
            <div className="container-banner-body"> 
                  <h1 className="Content-heading">Projects</h1>
                 <p style={{opacity:'1'}}>
-                     <Projects/>   
+                      <h3> Self Macro Projects: </h3>  
+                     {/* <NeogProjects/>   */}
+                     <ProjectList/>
+                     <h3> Mini Projects: </h3> 
+                     <Projects/> 
                 </p>
           </div>
-         </div>
-                  {this.renderArrowProject()}
-    </section>
+          {/* {this.renderArrowProject()} */}
+         </div>        
+       </section>
         )
 }
 
@@ -201,7 +176,8 @@ renderBlogs = () =>{
                   <div className="container-banner">
                      <div className="container-banner-body"> 
                         <h1 className="Content-heading">Blogs</h1>
-                        <p style={{paddingLeft:'10%',opacity:'1'}}>
+                         
+                        {/* <p style={{paddingLeft:'10%',opacity:'1'}}>
                                 <table>
                                         <tbody>
                                                 <tr>
@@ -248,96 +224,45 @@ renderBlogs = () =>{
                                                 </tr>
                                         </tbody>
                                 </table>
-                        </p>
-                 </div>
+                        </p> */}
                  </div>
                  {this.renderArrowBlog()}
+                 </div>
+                 
             </section>
         )
 }
 
-// renderContactMe = () =>{
-//         return(
-//                 <section className="contactme-banner" id="contactme">
-//                    <div className="container-banner">
-//                      <div className="container-banner-body"> 
-//                         <h1>Contact Me</h1>
-//                         <p>
-//                                 pkpkpkpkp
-//                         </p>
-//                  </div>
-//                 </div>
-//                   {this.renderArrowContactme()}
-//             </section>
-//         )
-// }
 
 renderContactMe = () =>{
         return(
-           <section className="contactme-banner" id="contactme">
-                        <div className="innerFooter__men">
-
-                          </div> 
+           <section id="contactme"> 
                 <div className="innerFooter__mainBox">
                        <div className="innerFooter__mainBox_body">
-                           
-                               <h1>Contact Me</h1>
-                               <table style={{position:'absolute',top:'12%'}}>
-                                       <tbody>
-                                               <tr>
-                                                       <td>
-                                                             
-                                                                <h3 style={{paddingTop:'2%'}}> Creator Space </h3> 
-                                                                <div> 
-                                                                        <img className="innerFooter__mainBox_Instagram" src={Insta} alt="instagram"/>
-                                                                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/creatorspace01/" alt="instagramlink" style={{textDecoration:'none',color:'white'}}> creatorspace01 </a>
-                                                                </div>
-                                                                <div> 
-                                                                        <img className="innerFooter__mainBox_Instagram" src={Youtube} alt="youtube"/>
-                                                                        <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCNBEZbgBoLLpopG7vKmDGnw" alt="youtubelink" style={{textDecoration:'none',color:'white'}}> creator space </a>
-                                                                </div>
+                               <div className="flex-row">
+                                    <a target="_blank" rel="noreferrer" href="https://www.facebook.com/chanchal.panpaliya" alt="instagramlink" style={{textDecoration:'none',color:'white'}}>              
+                                         <i class="fa-brands fa-facebook-square footer-icon"></i>
+                                    </a>
 
-                                                        </td>
+                                    <a target="_blank" rel="noreferrer" href="https://twitter.com/CPanpaliya" alt="twitterlink" style={{textDecoration:'none',color:'white'}}> 
+                                         <i class="fa-brands fa-twitter-square footer-icon"></i>
+                                    </a>
 
-                                                        <td style={{paddingTop:'8%',width:'55%'}}> 
-                                                                <h3> Personal </h3>
-                                                                <div> 
-                                                                        <img className="innerFooter__mainBox_facebook" src={facebook} alt="instagram"/>
-                                                                        <a target="_blank" rel="noreferrer" href="https://www.facebook.com/chanchal.panpaliya" alt="instagramlink" style={{textDecoration:'none',color:'white'}}> chanchal.panpaliya </a>
-                                                                </div>
-                                                                <div> 
-                                                                        <img className="innerFooter__mainBox_facebook" src={twitter} alt="twitter"/>
-                                                                        <a target="_blank" rel="noreferrer" href="https://twitter.com/CPanpaliya" alt="twitterlink" style={{textDecoration:'none',color:'white'}}> CPanpaliya </a>
-                                                                </div>
-                                                                <div> 
-                                                                        <img className="innerFooter__mainBox_facebook" src={linkedIn} alt="linkedin"/>
-                                                                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chanchal-panpaliya/" alt="linkedinlink" style={{textDecoration:'none',color:'white'}}> chanchal-panpaliya </a>
-                                                                </div>
-                                                                <div> 
-                                                                        <img className="innerFooter__mainBox_facebook" src={github} alt="github"/>
-                                                                        <a target="_blank" rel="noreferrer" href="https://github.com/chanchal-panpaliya" alt="githublink" style={{textDecoration:'none',color:'white'}}> chanchal-panpaliya </a>
-                                                                </div>
-                                                        </td>
-                                               </tr>
-                                       </tbody>
-                               </table>
-                              
-                             
+                                    <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/chanchal-panpaliya/" alt="linkedinlink" style={{textDecoration:'none',color:'white'}}> 
+                                        <i class="fa-brands fa-linkedin footer-icon"></i>
+                                    </a>
 
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/chanchal-panpaliya" alt="githublink" style={{textDecoration:'none',color:'white'}}>  
+                                        <i class="fa-brands fa-github-square footer-icon"></i>
+                                    </a>
+                               </div>
                        </div>
                 </div>
-                <div className="innerFooter__sideOuter">
-                        <div className="innerFooter__sideBg">
-                                
-                        </div>
-
-                </div>
-           
-               {this.renderArrowContactme()}
-               <div style={{width:'65%',height:'5vh',position:'absolute',backgroundColor:'#C0C0C0',opacity:'0.7'}}> </div>
            </section>
         )
 }
+
+
 
 render(){
     return(
@@ -346,7 +271,7 @@ render(){
        <div className="home-container">
            <div className="home-container-logoname"> 
                  <a href="#home" className="home-main-nav-a">
-                        Creator Space
+                        Portfolio
                 </a>
            </div> 
          <nav className="home-main-nav">
@@ -360,16 +285,27 @@ render(){
          </nav>
        </div>
     </header>
-    <video loop autoPlay muted style={{width:'100vw',height:'100vh',objectFit:'cover',top:'0',left:'0',position:'fixed'}}>
-                  <source type="video/mp4" src={BackgroundVideo} />
-     </video>
+     {/*<video loop autoPlay muted style={{width:'100vw',height:'100vh',objectFit:'cover',top:'0',left:'0',position:'fixed'}}>
+          <source type="video/mp4" src={BackgroundVideo} />
+     </video> */}
      {this.renderHome()}
-     {this.renderAbout()}
-     {this.renderProjects()}
-     {this.renderBlogs()}
-     {this.renderContactMe()}
+     <div className="section-container" id="about">
+        <About/>
+        {this.renderArrowAbout()}
+     </div>
      
-       
+    
+     {/* {this.renderAbout()} */}
+     {this.renderProjects()}
+
+     <div className="section-container" id="blogs">
+        <Blogs/>
+        {/* {this.renderArrowBlog()} */}
+     </div>
+
+     {/* {this.renderBlogs()} */}
+     {this.renderContactMe()}
+
      </div>
   )
  }

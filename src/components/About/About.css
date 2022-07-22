@@ -1,0 +1,59 @@
+/* .flex-center{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+} */
+
+.flex-center{
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    gap: 10px;
+    margin-top: 15px; 
+    justify-content: center;
+    width: auto;
+}
+
+.card-box{
+    background-color: white;
+    border-radius: 6px;
+    padding: 20px;
+    color: gray;
+    word-break: break-word;
+    /* width: 26vw; */
+    margin: 20px;
+    width: -webkit-fill-available;
+}
+
+.badge{
+    background:white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.badge i{
+  padding: 0.5rem;
+  background: blueviolet;
+  color: white;
+  border-radius: 5px;
+  border: solid white 2px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card-badge-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: 1rem;
+
+}
+
+@media (max-width:900px) {
+    .flex-center{    grid-template-columns:repeat(1,auto); }
+    .card-box{ width: auto;}
+}

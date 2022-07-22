@@ -2,7 +2,7 @@ import { Component } from "react";
 import './projects.css';
 
 
-class Projects extends Component{
+class NeogProjects extends Component{
 
     renderMark1=()=>{
         return(
@@ -163,159 +163,6 @@ class Projects extends Component{
         )
     }
 
-    renderMark10 = () =>{
-        return(
-
-            <div className="Project_Mark7">
-            <div className="Project_Mark1_heading"> Mark10 </div>
-                <div className="Project_Mark1_heading_content"> Cash Register </div>
-                <div className="Project_Mark1_heading_content-buttonChip"> 
-                   Reactjs
-                </div>
-                <div className="Project_Mark1_heading_content-button-Live">
-                     <button  className="button-Live">
-                        <a className="alink" rel="noreferrer" target="_blank" href="https://creatorspace-cashregister.netlify.app/">
-                             LIVE
-                        </a>
-                     </button>
-                </div>
-                <div className="Project_Mark1_heading_content-button-ViewSourceCode">
-                    <button   className="button-SOURCE">
-                       <a className="link1" rel="noreferrer" target="_blank" href="https://github.com/chanchal-panpaliya/cash_register_Mark10">
-                          VIEW SOURCE 
-                       </a>
-                    </button>
-                </div>
-            </div>
-        )
-    }
-
-    renderMark11=()=>{
-        return(
-            <div className="Project_Mark8">
-            <div className="Project_Mark1_heading"> Mark11 </div>
-                <div className="Project_Mark1_heading_content"> Birthdate - lucky or Not </div>
-                <div className="Project_Mark1_heading_content-buttonChip"> 
-                   Reactjs
-                </div>
-                <div className="Project_Mark1_heading_content-button-Live">
-                     <button  className="button-Live">
-                        <a className="alink" rel="noreferrer" target="_blank" href="https://creatorspace-birthdaylucky.netlify.app/">
-                           LIVE
-                        </a>
-                    </button>
-                </div>
-                <div className="Project_Mark1_heading_content-button-ViewSourceCode">
-                    <button   className="button-SOURCE"> 
-                       <a className="link1" rel="noreferrer" target="_blank" href="https://github.com/chanchal-panpaliya/birthdates_lucky_Mark11">
-                          VIEW SOURCE 
-                       </a>
-                    </button>
-                </div>
-            </div>
-        )
-    }
-
-    renderMark12=()=>{
-        return(
-            <div className="Project_Mark9">
-            <div className="Project_Mark1_heading"> Mark12 </div>
-              <div className="Project_Mark1_heading_content"> Fun With Triangles </div>
-              <div className="Project_Mark1_heading_content-buttonChip"> 
-                 Reactjs
-              </div>
-              <div className="Project_Mark1_heading_content-button-Live">
-                   <button  className="button-Live">
-                      <a className="alink" rel="noreferrer" target="_blank" href="https://creatorspace-funwithtriangles.netlify.app/">
-                         LIVE
-                      </a>
-                   </button>
-              </div>
-              <div className="Project_Mark1_heading_content-button-ViewSourceCode">
-                  <button   className="button-SOURCE">
-                     <a className="link1" rel="noreferrer" target="_blank" href="https://github.com/chanchal-panpaliya/fun_with_triangles_Mark12">
-                        VIEW SOURCE 
-                     </a>
-                  </button>
-              </div>
-            </div>
-        )
-    }
-
-    renderMark13=()=>{
-        return(
-            <div className="Project_Mark10">
-            <div className="Project_Mark1_heading"> Mark13 </div>
-              <div className="Project_Mark1_heading_content"> DOB are palindrome </div>
-              <div className="Project_Mark1_heading_content-buttonChip"> 
-                  Reactjs
-              </div>
-              <div className="Project_Mark1_heading_content-button-Live">
-                   <button  className="button-Live">
-                      <a className="alink" rel="noreferrer" target="_blank" href="https://creatorspace-birthdaypalindrome.netlify.app/">
-                          LIVE
-                      </a>
-                  </button>
-              </div>
-              <div className="Project_Mark1_heading_content-button-ViewSourceCode">
-                  <button   className="button-SOURCE">
-                     <a className="link1" rel="noreferrer" target="_blank" href="https://github.com/chanchal-panpaliya/birthdates_palindrome_Mark13">
-                        VIEW SOURCE 
-                     </a>
-                  </button>
-              </div>
-            </div>
-        )
-    }
-
-    renderMark14=()=>{
-        return(
-            <div className="Project_Mark11">
-            <div className="Project_Mark1_heading"> Mark14 </div>
-                 <div className="Project_Mark1_heading_content"> Profit or Loss </div>
-                 <div className="Project_Mark1_heading_content-buttonChip"> 
-                    Reactjs
-                 </div>
-                 <div className="Project_Mark1_heading_content-button-Live">
-                      <button  className="button-Live">
-                        <a className="alink" rel="noreferrer" target="_blank" href="https://creatorspace-stockprofitandloss.netlify.app/">
-                            LIVE
-                        </a>
-                      </button>
-                 </div>
-                 <div className="Project_Mark1_heading_content-button-ViewSourceCode">
-                     <button   className="button-SOURCE">
-                        <a className="link1" rel="noreferrer" target="_blank" href="https://github.com/chanchal-panpaliya/stock_profit_loss_Mark14">
-                           VIEW SOURCE 
-                        </a>
-                     </button>
-                 </div>
-            </div>
-        )
-    }
-
-    renderMark15=()=>{
-        return(
-            <div className="Project_Mark12">
-            <div className="Project_Mark1_heading"> Mark15 </div>
-                <div className="Project_Mark1_heading_content"> Blogs </div>
-                <div className="Project_Mark1_heading_content-buttonChip"> 
-                  
-                </div>
-                <div className="Project_Mark1_heading_content-button-Live">
-                </div>
-                <div className="Project_Mark1_heading_content-button-ViewSourceCode">
-                    <button  className="button-SOURCE">
-                       <a className="link1" href="#blogs">
-                          BLOG 
-                        </a>
-                   
-                    </button>
-                </div>
-            </div>
-        )
-    }
-
     render(){
         return(
           <div className="flex-col">
@@ -326,15 +173,10 @@ class Projects extends Component{
                    {this.renderMark7()}
                    {this.renderMark8()}
                    {this.renderMark9()}
-                   {this.renderMark10()}
-                   {this.renderMark11()}
-                   {this.renderMark12()}
-                   {this.renderMark13()}
-                   {this.renderMark14()} 
               </section>
           </div>
         )
     }
 }
 
-export default Projects
+export default NeogProjects
