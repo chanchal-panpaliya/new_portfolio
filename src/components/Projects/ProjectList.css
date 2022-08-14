@@ -17,7 +17,7 @@
     margin-top: 1rem;
 } 
 
-.button-flex button{
+.button-flex a{
   border: none;
   padding: 0.5rem;
   cursor: pointer;
@@ -26,7 +26,7 @@
   width: 5rem;
 }
 
-.button-flex button:first-child{
+.button-flex a:first-child{
    color: red;
 }
 
