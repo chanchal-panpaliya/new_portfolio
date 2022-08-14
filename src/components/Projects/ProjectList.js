@@ -74,8 +74,12 @@ class ProjectList extends Component{
                             <h3> {item.name} </h3>
                             <div> {item.desc} </div>
                             <div className="button-flex">
-                               <button> Live </button>
-                               <button> Git </button>
+                               <a target="_blank" rel="noreferrer" href={item.liveLink}>
+                                   <button> Live </button>
+                               </a>
+                               <a target="_blank" rel="noreferrer" href={item.GitLink}>
+                                   <button > Git </button>
+                               </a>
                             </div>
                         </div>
                    </div>
