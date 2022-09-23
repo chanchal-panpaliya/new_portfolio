@@ -91,12 +91,11 @@ renderHome = () =>{
                                         </div>
                                 </div>
                                 <div className="text-bottom">
-                                        <div>A Frontend Web Developer</div>
+                                        <div>Advanced Frontend Web Developer</div>
                                 </div>
                         </div>
                         
                    </div>
-                   {/* {this.renderArrowHome()}     */}
                 </section>
         )
 }
