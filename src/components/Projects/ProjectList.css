@@ -60,4 +60,5 @@
 
 @media (max-width:1200px) {
     .macro-project-container{  grid-template-columns:repeat(1,auto); }
+    .macro-project-box{flex-direction: column;}
 }
